@@ -1,0 +1,117 @@
+
+
+html{
+    background: #018DED url(http://unsplash.it/1500/1000?image=881&blur=50);
+    background-size: cover;
+    font-family: 'helvetica neue';
+    text-align: center;
+    font-size: 10px;
+}
+
+body {
+    margin: 0;
+    font-size: 2rem;
+    display: flex;
+    flex: 1;
+    min-height: 100vh;
+    align-items: center;
+}
+
+.TimeClock
+{
+    position: relative;
+    width: 30rem;
+    height: 30rem;
+    border: 1rem solid white;
+    border-radius: 50%;
+    margin:50px auto;
+    padding: 2rem;
+    box-shadow: 0 0 0 4px rgba(0, 0, 0, 0.1), inset 0 0 0 3px #EFEFEF, inset 0 0 10px black, 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.ClockFace{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform: translateY(-3px);
+    transform: rotate(90deg);
+    z-index: 2;
+    /* border: 1px solid black; */
+}
+
+.ClockNumber
+{
+    position: absolute;
+    width:100%;
+    height:100%;
+    top:0rem;
+    left:0rem;
+    /* z-index: 1; */
+    /* border:.1rem solid black; */
+    /* transform: rotate(90deg); */
+}
+
+#Num
+{
+    position: absolute;
+    /* border: 1px solid black; */
+    top:45%;
+    left:4%;
+    display: flex;
+    width:90%;
+    height: 2rem;
+    color:white;
+    font-size: 3rem;
+    /* left:70%;
+    display: flex;
+    width:50%;
+    height:100%;
+    font-size:3rem;
+    color:white; */
+}
+
+
+span
+{
+    position: absolute;
+}
+
+.hand {
+    width: 50%;
+    background: black;
+    position: absolute;
+    top: 50%;
+    transform-origin: 100%;
+    /* transform: rotate(90deg); */
+    transition: all 0.05s;
+    transition-timing-function: cubic-bezier(0.35, 2.65, 1, 1);
+    border-radius: 50%;
+}
+
+
+.Second {
+    height: .3rem;
+    background: #c11f1f;
+    transition: transform 1s;
+    transition-timing-function: linear;
+}
+
+.Minute {
+    height:.3rem;
+    width: 13rem;
+    margin-left: 5%;
+    background: orange;
+}
+
+.Hour {
+    height:.2rem;
+    width:10rem;
+    margin-left: 15%;
+    background: black;
+}
+
+.hand
+{
+    transform-origin: 100% 50%;
+    transform: rotate(90deg);
+}

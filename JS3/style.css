@@ -1,0 +1,46 @@
+*{
+margin:0px;
+padding:0px;
+border: 1px solid black;
+font-style:serif;
+font-size: 10px;
+background-color:rgb(17, 17, 82);
+}
+
+:root
+{
+    --BaseColor:#ffc600;
+    --Spacing:1rem;
+    --Blur:0rem;
+    --GrayScale:0rem;
+    --fontsize:2rem;
+}
+
+.IMG
+{
+    text-align: center;
+}
+img
+{
+    padding:var(--Spacing);
+    background:var(--BaseColor);
+    -webkit-filter:blur(var(--Blur)) grayscale(var(--GrayScale));
+    filter:blur(var(--Blur)) grayscale(var(--GrayScale));
+}
+
+.h1
+{
+    font-size:6rem;
+    color:orange;
+    text-align: center;
+    display: block;
+}
+
+label, span
+{
+    color:white;
+    font-size: var(--fontsize);
+    margin:.5rem;
+    padding:.5rem;
+
+}
